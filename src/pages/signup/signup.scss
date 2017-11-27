@@ -1,7 +1,6 @@
-page-login {
+page-signup {
 .background {
     background-image: url('../../assets/back7.jpg');
-    //background-color: #2a9da8;
 }
 .scroll-content {
 
@@ -12,7 +11,8 @@ ion-card.card {
     background: rgba(0, 0, 0, 0.5);
     border-radius: 5px;
 }
-a, p, ion-card-header.card-header {
+a, p,
+ion-card-header.card-header {
     color: #fff!important;
 }
 
@@ -25,10 +25,11 @@ a, p, ion-card-header.card-header {
     background: rgba(255, 255, 255, 0.5);
     border: medium none;
 
-    .text-input {
+    .text-input, {
         color: #fff;
     }
 
+    
     input::-moz-placeholder{
         color: #fff!important;
     }
@@ -56,7 +57,7 @@ a, p, ion-card-header.card-header {
 }
 
 .input-cover {
-  position: static;
+position: static;
 }
 
 }
