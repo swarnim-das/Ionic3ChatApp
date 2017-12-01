@@ -12,6 +12,7 @@ import { AngularFireModule } from 'angularfire2';
 import { MyApp } from './app.component';
 import { AuthProvider } from '../providers/auth/auth';
 import { UserProvider } from '../providers/user/user';
+import { ImghandlerProvider } from '../providers/imghandler/imghandler';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { UserProvider } from '../providers/user/user';
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     AuthProvider,
     AngularFireAuth,
-    UserProvider
+    UserProvider,
+    ImghandlerProvider
   ]
 })
 export class AppModule {}
