@@ -4,6 +4,10 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
+import { File } from '@ionic-native/file';
+import { FileChooser } from '@ionic-native/file-chooser';
+import { FilePath } from '@ionic-native/file-path';
+
 import { config } from './app.firebaseconfig';
 
 import { AngularFireAuth } from 'angularfire2/auth';
@@ -30,6 +34,9 @@ import { ImghandlerProvider } from '../providers/imghandler/imghandler';
   providers: [
     StatusBar,
     SplashScreen,
+    File,
+    FileChooser,
+    FilePath,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     AuthProvider,
     AngularFireAuth,
